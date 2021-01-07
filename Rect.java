@@ -29,6 +29,7 @@ public class Rect
         color = Canvas.getColor("red");
         isVisible = false;
     }
+    public Rect(int x,int y , intxp, int y,
 
     /**
      * Make this rectangle visible. If it was already visible, do nothing.

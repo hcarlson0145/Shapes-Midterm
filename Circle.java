@@ -21,12 +21,27 @@ public class Circle
      */
     public Circle()
     {
-        diameter = 68;
+        diameter = 80;
         xPosition = 230;
         yPosition = 90;
         color = Canvas.getColor("blue");
     }    
-    
+    public Circle(int x, int y, int diameter, String color, boolean visible)
+                {
+                   xPosition = x;
+                   yPosition = y;
+        
+                   this.diameter = diameter;
+                   
+        
+                   
+                   
+                    this.color = Canvas.getColor(color);
+        
+                    if (visible) {
+                        makeVisible();
+                    }
+                }
     /**
      * Make this circle visible. If it was already visible, do nothing.
      */
